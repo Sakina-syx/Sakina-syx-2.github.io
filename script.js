@@ -27,3 +27,10 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
+// 为每张图片添加点击事件
+document.querySelectorAll('.gallery img').forEach(function(img) {
+    img.addEventListener('click', function() {
+        // 切换亮度
+        this.classList.toggle('dim');
+    });
+});
