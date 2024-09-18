@@ -1,10 +1,4 @@
-/* 简化样式 */
-.gallery img {
-    width: 30%;
-    padding: 7px;
-    cursor: pointer;
-}
-
+/* 简单的样式 */
 .modal {
     display: none;
     position: fixed;
@@ -24,6 +18,16 @@
     max-width: 700px;
 }
 
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -33,7 +37,7 @@
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -43,14 +47,3 @@
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-.gallery img {
-    width: 30%;
-    padding: 7px;
-    cursor: pointer;
-    transition: filter 0.3s ease;
-}
-
-.dim {
-    filter: brightness(0.5);
-}
-
