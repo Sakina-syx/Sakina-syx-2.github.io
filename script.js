@@ -2,11 +2,11 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function openModal() {
-    document.getElementById('myModal').style.display = "block";
+    document.getElementById("myModal").style.display = "block";
 }
 
 function closeModal() {
-    document.getElementById('myModal').style.display = "none";
+    document.getElementById("myModal").style.display = "none";
 }
 
 function plusSlides(n) {
@@ -27,10 +27,3 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
-// 为每张图片添加点击事件
-document.querySelectorAll('.gallery img').forEach(function(img) {
-    img.addEventListener('click', function() {
-        // 切换亮度
-        this.classList.toggle('dim');
-    });
-});
