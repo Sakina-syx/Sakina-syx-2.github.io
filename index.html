@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片画廊</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="image1.jpg" alt="图片1" onclick="openModal();currentSlide(1)">
+        <img src="image2.jpg" alt="图片2" onclick="openModal();currentSlide(2)">
+        <img src="image3.jpg" alt="图片3" onclick="openModal();currentSlide(3)">
+        <img src="image4.jpg" alt="图片4" onclick="openModal();currentSlide(4)">
+        <img src="image5.jpg" alt="图片5" onclick="openModal();currentSlide(5)">
+        <img src="image6.jpg" alt="图片6" onclick="openModal();currentSlide(6)">
+        <img src="image7.jpg" alt="图片7" onclick="openModal();currentSlide(7)">
+        <img src="image8.jpg" alt="图片8" onclick="openModal();currentSlide(8)">
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <!-- 遥控器 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
