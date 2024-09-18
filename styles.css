@@ -43,3 +43,14 @@
     right: 0;
     border-radius: 3px 0 0 3px;
 }
+.gallery img {
+    width: 30%;
+    padding: 7px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.dim {
+    filter: brightness(0.5);
+}
+
